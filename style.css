@@ -10,9 +10,7 @@ body{
     overflow-x: hidden;
 }
 
-.bg-intro-mobile{
-    display: none;
-}
+
 
 .mockupimg{
     position: absolute;
@@ -376,7 +374,7 @@ button{
     color: white;
     font-weight: bold;
   }
-  @media only screen and (max-width: 830px) {
+  @media only screen and (max-width: 786px) {
      .navbar, .headbtn{
         display: none;
     } 
@@ -384,11 +382,8 @@ button{
    display: none;
       
     }
-
     .bg-intro-mobile{
-        position: absolute;
-       display: block;
-       z-index: -3;
+     display: none;
     }
     .mockupimg{
         position: absolute;
@@ -410,7 +405,7 @@ button{
         
             margin-top: 70vh;
             text-align: center;
-            margin-left: 5vw;
+            margin-left: 4vw;
         }
         .first-content h1{
             font-weight: 300;
@@ -424,8 +419,9 @@ button{
         .second-content{
             
             width: 90vw;
-            margin-top: -20vh;
+            margin-top: -15vh;
             text-align: center;
+            margin-left: 5vw;
         }
         .second-content h1{
             font-size: 4vh;
@@ -438,7 +434,7 @@ button{
             display: flex;
             flex-direction: column;
             width: 90vw;
-            margin-left: 8.5vw;
+            margin-left: 6.5vw;
            
             /* height: 50vh; */
             justify-content: space-between;
@@ -567,12 +563,7 @@ button{
                display: none;
             }
             .bg-intro-mobile{
-                display: block;
-                position: absolute;
-                z-index: -3;
-                overflow-x: hidden;
-                top: -20vh;
-                left: -20vw;
+            display: none;
             }
 
             .mockupimg{
