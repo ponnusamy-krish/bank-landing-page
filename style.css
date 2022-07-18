@@ -15,7 +15,7 @@ p{
 }
 
 .hambtn{
-    transition: all 4s ease-in-out;
+    transition: all 2s ease;
 }
 .resnavbar{
 display: none;
@@ -42,6 +42,7 @@ header{
     background-color: white;
     justify-content: space-around;
     height: 10vh;
+    margin-top: -18px;
     
 }
 .logo{
@@ -49,7 +50,7 @@ header{
 }
 
 .navbar{
- 
+    
     align-self: center;
     width: 40vw;
     display: flex;
@@ -416,7 +417,11 @@ button:hover{
    color: rgba(255,255,255,0.5);
  } 
   @media only screen and (max-width: 786px) {
-     .navbar, .headbtn{
+   
+   header{
+    margin-top: 0px;
+   }
+    .navbar, .headbtn{
         display: none;
     } 
     .bg-intro-desktop{
