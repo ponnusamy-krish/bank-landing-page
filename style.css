@@ -10,8 +10,16 @@ body{
     overflow-x: hidden;
 }
 
+p{
+    color: rgba(0, 0, 0, 0.35);
+}
 
-
+.hambtn{
+    transition: all 4s ease-in-out;
+}
+.resnavbar{
+display: none;
+}
 .mockupimg{
     position: absolute;
     height: 120vh;
@@ -54,7 +62,9 @@ header{
 
 }
 
-
+.quote{
+    color: black;
+}
 .navtext1:after {
     content: '';
     position: absolute;
@@ -62,7 +72,7 @@ header{
     transform: scaleX(0);
     height: 4px;
     top: 10vh;
-    left: 31vw;
+    left: 29.5vw;
     
      background:  linear-gradient(90deg, rgba(17,255,0,1) 0%, rgba(0,206,255,1) 100%);
     transform-origin: bottom right;
@@ -81,7 +91,7 @@ header{
     transform: scaleX(0);
     height: 4px;
     top: 10vh;
-    left: 39.5vw;
+    left: 38vw;
     
      background:  linear-gradient(90deg, rgba(17,255,0,1) 0%, rgba(0,206,255,1) 100%);
     transform-origin: bottom right;
@@ -100,7 +110,7 @@ header{
     transform: scaleX(0);
     height: 4px;
     top: 10vh;
-    left: 49.3vw;
+    left: 47.6vw;
     
      background:  linear-gradient(90deg, rgba(17,255,0,1) 0%, rgba(0,206,255,1) 100%);
     transform-origin: bottom right;
@@ -118,7 +128,7 @@ header{
     transform: scaleX(0);
     height: 4px;
     top: 10vh;
-    left: 58vw;
+    left: 56.5vw;
     
      background:  linear-gradient(90deg, rgba(17,255,0,1) 0%, rgba(0,206,255,1) 100%);
     transform-origin: bottom right;
@@ -136,7 +146,7 @@ header{
     transform: scaleX(0);
     height: 4px;
     top: 10vh;
-    left: 67.5vw;
+    left: 65.5vw;
     
      background:  linear-gradient(90deg, rgba(17,255,0,1) 0%, rgba(0,206,255,1) 100%);
     transform-origin: bottom right;
@@ -177,6 +187,7 @@ display: none;
 }
 .first-content button{
     margin: 10px;
+    margin-left: -5px;
 }
 
 .second-content{
@@ -328,6 +339,10 @@ margin-top: 10vh;
 .logos img{
     margin: 10px;
 }
+
+.logos img:hover{
+    filter: invert(48%) sepia(6%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
 .first-m{
    
     display: flex;
@@ -344,6 +359,9 @@ margin-top: 10vh;
     color: white;
     font-weight: 200;
 }
+.first-m a:hover{
+    color: hsl(136, 65%, 51%);
+}
 .second-m{
     
     display: flex;
@@ -358,10 +376,14 @@ margin-top: 10vh;
     color: white;
     font-weight: 200;
 }
-
+.second-m a:hover{
+    color: hsl(136, 65%, 51%);
+}
 .btn-privacy{
    align-self: center;
    justify-self: center;
+   background-color: azure;
+   border-radius: 22px;
  
 }
 
@@ -373,7 +395,26 @@ button{
     background: linear-gradient(90deg, rgba(17,255,0,1) 0%, rgba(0,206,255,1) 100%);
     color: white;
     font-weight: bold;
+  transition: 0.5s;
+  touch-action: manipulation;
+  cursor: pointer;
+
   }
+
+button:hover{
+    opacity: 60%;
+
+}
+  button:active{
+    transform: scale(0.95);
+  }
+
+ .allrights{
+    position: absolute;
+   margin-left: 70vw;
+   margin-top: 22vh;
+   color: rgba(255,255,255,0.5);
+ } 
   @media only screen and (max-width: 786px) {
      .navbar, .headbtn{
         display: none;
@@ -391,7 +432,7 @@ button{
         left: 5vw;
         width: 80vw;
         height: auto;
-        z-index: -1;
+        z-index: -3;
     }
     .res-navbar{
         display: block;
@@ -517,6 +558,9 @@ button{
             color: white;
             font-weight: 200;
         }
+        .first-m a:hover{
+            color: darkgreen;
+        }
         .second-m{
             
             display: flex;
@@ -546,10 +590,46 @@ button{
 
 
 
+        .allrights{
+           
+           position: absolute;
+           margin-left: 19vw;
+           margin-top: 95vh;
+           color: rgba(255,255,255,0.5);
+         }
+         .resnavbar{
+            position: absolute;
+            height: 50vh;
+            width: 90vw;
+            background-color: white;
+            top: 80px;
+            left: 20px;
+            transition: all 0.8s ease;
+            
+            }
 
+            .resnavbar{
+                
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
 
+            }
+            .resnavbar a{
+                text-decoration: none;
+                color: black;
+            }
 
-
+        .bg-color{
+            display: block;
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            z-index: -1;
+            background-color: rgba(0, 0, 0, 0.7);
+        }    
     }   
 
       /* mobile */
@@ -580,7 +660,7 @@ button{
                 right: -100px;
                 width: 95vw;
                 height: auto;
-                z-index: -1;
+                z-index: -3;
                 left: 3vw;
             }
           }
