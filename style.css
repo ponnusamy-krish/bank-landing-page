@@ -322,7 +322,7 @@ margin-top: 10vh;
     margin-left: 10vw;
     align-self: center;
     justify-self: center;
-    background-color: tomato;
+   
 }
 
 .logos img{
@@ -336,7 +336,7 @@ margin-top: 10vh;
     align-self: center;
     height: 20vh;
     margin-left: 50px;
-    background-color: violet;
+   
 }
 
 .first-m a{
@@ -351,7 +351,7 @@ margin-top: 10vh;
     justify-content: space-around;
     align-self: center;
     height: 20vh;
-    background-color: brown;
+   
 }
 .second-m a{
     text-decoration: none;
@@ -362,7 +362,7 @@ margin-top: 10vh;
 .btn-privacy{
    align-self: center;
    justify-self: center;
-   background-color: aqua;
+ 
 }
 
 button{
@@ -452,7 +452,7 @@ button{
             justify-content: space-between;
         }
         .articles img{
-            width: 82vw;
+            width: 84vw;
         }
 
         footer{
@@ -464,6 +464,9 @@ button{
         width: 100vw;
         margin-top: 10vh;
         
+        }
+        footer div{
+            margin-left: 10vw;
         }
         button{
             border: none;
@@ -488,14 +491,14 @@ button{
         
         .logos{
             
-            margin-left: 20vw;
+            margin-left: 10vw;
             align-self: center;
             justify-self: center;
-            background-color: tomato;
+            
         }
         
-        .logos img{
-            margin: 10px;
+        .f-logo{
+            padding-left: 50px;
         }
         .first-m{
            
@@ -504,8 +507,9 @@ button{
             justify-content: space-around;
             align-self: center;
             height: 20vh;
-            margin-left: 20vw;
-            background-color: violet;
+            margin-left: 25vw;
+            text-align: center;
+         
         }
         
         .first-m a{
@@ -520,8 +524,9 @@ button{
             justify-content: space-around;
             align-self: center;
             height: 20vh;
-            background-color: brown;
-            margin-left: 20vw;
+            text-align: center;
+            margin-top: -10vh;
+            margin-left: 25vw;
         }
         .second-m a{
             text-decoration: none;
