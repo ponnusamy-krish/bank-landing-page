@@ -491,7 +491,7 @@ button{
         
         .logos{
             
-            margin-left: 10vw;
+            margin-left: 15vw;
             align-self: center;
             justify-self: center;
             
@@ -538,7 +538,9 @@ button{
            align-self: center;
            justify-self: center;
            background-color: white;
-           margin-left: 20vw;
+           margin-left: 24vw;
+           border-radius: 30px;
+
         }
         
 
